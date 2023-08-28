@@ -25,6 +25,9 @@ const NavBar = () => {
                 <Link className="navbar-brand" to="/">
                     Ecommerce
                 </Link>
+                <Link className="navbar-brand" to="/case">
+                    Case
+                </Link>
                 <ul className="navbar-nav mr-auto">
                     {
                         profile !== null ? (
