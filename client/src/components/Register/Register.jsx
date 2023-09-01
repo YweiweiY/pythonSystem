@@ -60,14 +60,14 @@ const Register = () => {
                     />
                 </div>
                 <div className="col-md-6 bg-white p-5">
-                    <h3 className="pb-3">Register</h3>
+                    <h3 className="pb-3">注册</h3>
                     <div className="form-style">
                         <form>
                             <div className="row form-group pb-3">
                                 <div className="col">
                                     <input
                                         type="text"
-                                        placeholder="First Name"
+                                        placeholder="名"
                                         className="form-control"
                                         onChange={(e) => setFirstName(e.target.value)}
                                     />
@@ -75,7 +75,7 @@ const Register = () => {
                                 <div className="col">
                                     <input
                                         type="text"
-                                        placeholder="Last Name"
+                                        placeholder="姓"
                                         className="form-control"
                                         onChange={(e) => setLastName(e.target.value)}
                                     />
@@ -84,7 +84,7 @@ const Register = () => {
                             <div className="form-group pb-3">
                                 <input
                                     type="text"
-                                    placeholder="Username"
+                                    placeholder="用户名"
                                     className="form-control"
                                     onChange={(e) => setUsername(e.target.value)}
                                 />
@@ -92,7 +92,7 @@ const Register = () => {
                             <div className="form-group pb-3">
                                 <input
                                     type="email"
-                                    placeholder="Email"
+                                    placeholder="邮箱"
                                     className="form-control"
                                     onChange={(e) => setEmail(e.target.value)}
                                 />
@@ -100,7 +100,7 @@ const Register = () => {
                             <div className="form-group pb-3">
                                 <input
                                     type="password"
-                                    placeholder="Password"
+                                    placeholder="密码"
                                     className="form-control"
                                     onChange={(e) => setPassword(e.target.value)}
                                 />
@@ -108,7 +108,7 @@ const Register = () => {
                             <div className="form-group pb-3">
                                 <input
                                     type="password"
-                                    placeholder="Confirm Password"
+                                    placeholder="确认密码"
                                     className="form-control"
                                     onChange={(e) => setPassword2(e.target.value)}
                                 />
@@ -121,13 +121,13 @@ const Register = () => {
                                     className="btn btn-dark w-100 font-weight-bold mt-2"
                                     onClick={(e) => registerButton(e)}
                                 >
-                                    Submit
+                                    提交
                                 </button>
                             </div>
                             <div className="pt-4 text-center">
-                                Already Registered?{' '}
+                                准备好注册了吗？{' '}
                                 <Link to="/login" style={{textDecoration: 'none'}}>
-                                    Login Now
+                                    即刻登录
                                 </Link>
                             </div>
                             <div>

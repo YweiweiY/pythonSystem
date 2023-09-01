@@ -85,6 +85,7 @@ const App = () => {
         <BrowserRouter>
             <NavBar/>
             <Switch>
+             路由
                 <Route exact path="/" component={HomePage}/>
                 <Route exact path="/product/:id" component={ProductDetails}/>
                 {

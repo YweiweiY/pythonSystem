@@ -47,21 +47,21 @@ const Product = ({item}) => {
                         {item.description.substring(0, 50)}...{' '}
                         <Link to={`/product/${item.id}`} style={{textDecoration: 'none'}}>
                             {' '}
-                            Read more
+                            更多详情
                         </Link>
                     </p>
                     <div className="buy d-flex justify-content-between align-items-center">
                         <div className="price">
                             <h5 className="mt-4">
                                 {' '}
-                                Price: <del className="text-danger">
+                                价格: <del className="text-danger">
                                 {item.market_price}$
                             </del>{' '}
                                 <i className="text-success">{item.selling_price}$</i>
                             </h5>
                         </div>
                         <button onClick={() => addToCart(item.id)} className="btn btn-warning mt-3">
-                            <i className="fas fa-shopping-cart"/> Add to Cart
+                            <i className="fas fa-shopping-cart"/> 加入购物车
                         </button>
                     </div>
                 </div>

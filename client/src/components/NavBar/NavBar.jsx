@@ -23,10 +23,10 @@ const NavBar = () => {
         <nav className="navbar navbar-expand-lg navbar-dark bg-dark navbar_className">
             <div className="container">
                 <Link className="navbar-brand" to="/">
-                    Ecommerce
+                    主页
                 </Link>
                 <Link className="navbar-brand" to="/case">
-                    Case
+                    案例
                 </Link>
                 <ul className="navbar-nav mr-auto">
                     {
@@ -39,16 +39,16 @@ const NavBar = () => {
                                         </Link>
                                     </li>
                                     <li className="nav-item">
-                                        <Link to="/profile" className="nav-link btn-dark active">Profile</Link>
+                                        <Link to="/profile" className="nav-link btn-dark active">个人信息</Link>
                                     </li>
                                     <li className="nav-item">
-                                        <Link onClick={logoutButton} className="nav-link active btn-dark">Logout</Link>
+                                        <Link onClick={logoutButton} className="nav-link active btn-dark">退出登录</Link>
                                     </li>
                                 </>
                             ) :
                             (
                                 <li className="nav-item">
-                                    <Link to="/login" className="nav-link  active btn-dark">Login</Link>
+                                    <Link to="/login" className="nav-link  active btn-dark">登录</Link>
                                 </li>
                             )
                     }

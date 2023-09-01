@@ -59,23 +59,23 @@ const HomePage = () => {
                         <div className="">
                             {products?.previous !== null ? (
                                 <button onClick={previousPage} className="btn btn-lg btn-success">
-                                    <i className="fas fa-backward"/> Previous
+                                    <i className="fas fa-backward"/> 上一页
                                 </button>
                             ) : (
                                 <button className="btn btn-lg btn-success" disabled>
                                     {' '}
-                                    <i className="fas fa-backward"/> Previous
+                                    <i className="fas fa-backward"/> 上一页
                                 </button>
                             )}
                         </div>
                         <div className="">
                             {products?.next !== null ? (
                                 <button onClick={nextPage} className="btn btn-lg btn-danger">
-                                    Next <i className="fas fa-forward"/>
+                                    下一页 <i className="fas fa-forward"/>
                                 </button>
                             ) : (
                                 <button className="btn btn-lg btn-danger" disabled>
-                                    Next <i className="fas fa-forward"/>
+                                    下一页 <i className="fas fa-forward"/>
                                 </button>
                             )}
                         </div>

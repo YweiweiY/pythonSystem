@@ -17,7 +17,7 @@ class LawCase(models.Model):
     date = models.DateField(auto_now_add=True)
     case_category = models.ForeignKey(
         CaseCategory, on_delete=models.SET_NULL, blank=True, null=True)
-    # image = models.ImageField(upload_to="products/")
+    image = models.ImageField(upload_to="lawCase/")
     # market_price = models.PositiveIntegerField()
     # selling_price = models.PositiveIntegerField()
     description = models.TextField()

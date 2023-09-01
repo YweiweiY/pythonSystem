@@ -27,7 +27,7 @@ const Login = () => {
             .catch((error) => {
                 console.log(error.response)
                 if (error.response.status === 400)
-                    setErrors({[Object.keys(error.response.data)[0]]: 'Username OR Password is invalid Try Again !!'});
+                    setErrors({[Object.keys(error.response.data)[0]]: '用户名或密码是无效的 请重试！！'});
                 else
                     setErrors({'error': 'Internal Server Error Try Again!!!'});
             });
@@ -37,21 +37,21 @@ const Login = () => {
         <div className="container">
             <div className="row m-5 no-gutters shadow-lg">
                 <div className="col-md-6 bg-white p-5">
-                    <h3 className="pb-3">Login</h3>
+                    <h3 className="pb-3">登录</h3>
                     <div className="form-style">
                         <form>
                             <div className="form-group pb-3">
                                 <input
                                     type="text"
-                                    placeholder="Username"
+                                    placeholder="用户名"
                                     className="form-control"
                                     onChange={(e) => setUsername(e.target.value)}
                                 />
                             </div>
                             <div className="form-group pb-3">
                                 <input
-                                    type="password"
-                                    placeholder="Password"
+                                    type="密码"
+                                    placeholder="密码"
                                     className="form-control"
                                     onChange={(e) => setPassword(e.target.value)}
                                 />
@@ -62,14 +62,14 @@ const Login = () => {
                                     className="btn btn-dark w-100 font-weight-bold mt-2"
                                     onClick={(e) => loginButton(e)}
                                 >
-                                    Submit
+                                    提交
                                 </button>
                             </div>
                         </form>
                         <div className="mt-4 text-center">
-                            Haven't Registered Yet?{' '}
+                            没注册过？{' '}
                             <Link to="/register" style={{textDecoration: 'none'}}>
-                                Register Now
+                                立即注册
                             </Link>
                         </div>
                         <div className="mt-4">

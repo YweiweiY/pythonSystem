@@ -3,7 +3,7 @@ from .models import *
 
 
 class LawCaseAdmin(admin.ModelAdmin):
-    list_display = ("id", "title", "case_category", "description", "date", "location")
+    list_display = ("id", "title", "case_category", "description", "date", "location","image")
 
 
 admin.site.register(LawCase, LawCaseAdmin)
