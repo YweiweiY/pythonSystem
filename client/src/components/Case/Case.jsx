@@ -40,8 +40,6 @@ const Case = () => {
   return (
     <div className="container-fluid">
       <div className="row">
-        <div className="col-md-9">
-          <div className="row">
             {cases !== null ? (
               <div className={" flex align-middle"}>
                 <List
@@ -67,7 +65,7 @@ const Case = () => {
                         <img
                           width={272}
                           alt="logo"
-                          src="https://gw.alipayobjects.com/zos/rmsportal/mqaQswcyDLcXyDKnZfES.png"
+                          src={item.image}
                         />
                       }
                     >
@@ -87,8 +85,6 @@ const Case = () => {
               </>
             )}
           </div>
-        </div>
-      </div>
     </div>
   );
 };
