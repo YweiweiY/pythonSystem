@@ -14,6 +14,7 @@ import Order from "./components/Order/Order";
 import OldOrderDetails from "./components/OldOrderDetails/OldOrderDetails";
 import Profile from "./components/Profile/Profile";
 import Case from './components/Case/Case';
+import Home from './components/Home/Home';
 
 const App = () => {
     const [{profile, reloadPage}, dispatch] = useGlobalState();
@@ -87,6 +88,7 @@ const App = () => {
             <Switch>
              路由
                 <Route exact path="/" component={HomePage}/>
+                <Route exact path="/home" component={Home}/>
                 <Route exact path="/product/:id" component={ProductDetails}/>
                 {
                     profile !== null ? (
