@@ -1,12 +1,11 @@
 import Axios from "axios";
 import React, { useEffect, useState } from "react";
 import { domain } from "../../env";
-import { Avatar, List, Space } from "antd";
-// import { LikeOutlined, MessageOutlined, StarOutlined } from '@ant-design/icons';
+import { Avatar, List, Space ,Tag} from "antd";
+import userAvater from "../../assets/user.png"
 
 const Case = () => {
   const [cases, setCases] = useState(null);
-  console.log(cases);
   useEffect(() => {
     const getData = () => {
       Axios({
@@ -41,7 +40,7 @@ const Case = () => {
     <div className="container-fluid">
       <div className="row">
             {cases !== null ? (
-              <div className={" flex align-middle"}>
+              <div >
                 <List
                   itemLayout="vertical"
                   size="large"
@@ -56,12 +55,7 @@ const Case = () => {
                   renderItem={(item) => (
                     <List.Item
                       key={item.title}
-                      //   actions={[
-                      //     <IconText icon={StarOutlined} text="156" key="list-vertical-star-o" />,
-                      //     <IconText icon={LikeOutlined} text="156" key="list-vertical-like-o" />,
-                      //     <IconText icon={MessageOutlined} text="2" key="list-vertical-message" />,
-                      //   ]}
-                      extra={
+                      extra={  
                         <img
                           width={272}
                           alt="logo"
@@ -70,11 +64,14 @@ const Case = () => {
                       }
                     >
                       <List.Item.Meta
-                        avatar={<Avatar src={item.avatar} />}
+                        avatar={<Avatar src={userAvater} />}
                         title={<a href={item.href}>{item.title}</a>}
                         description={item.description}
+
                       />
                       {item.content}
+                      <Tag>{item.location}</Tag>
+                      <span style={{marginLeft:"10px"}}>{item.date}</span>
                     </List.Item>
                   )}
                 />

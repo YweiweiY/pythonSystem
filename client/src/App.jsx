@@ -87,13 +87,14 @@ const App = () => {
             <NavBar/>
             <Switch>
              路由
-                <Route exact path="/" component={HomePage}/>
-                <Route exact path="/home" component={Home}/>
+                <Route exact path="/" component={Home}/>
+                <Route exact path="/lawyer" component={HomePage}/>
                 <Route exact path="/product/:id" component={ProductDetails}/>
                 {
                     profile !== null ? (
                             <>
                                 <Route exact path="/case" component={Case}/>
+                                <Route exact path="/lawyer" component={HomePage}/>
                                 <Route exact path='/profile' component={Profile} />
                                 <Route exact path='/cart' component={Cart}/>
                                  <Route exact path='/order' component={Order} />

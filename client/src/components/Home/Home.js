@@ -36,10 +36,10 @@ import {
 import { createGlobalStyle, ThemeConsumer, withTheme } from "styled-components";
 import style from "styled-theming";
 
-const ThaparUniversity = [30.352904, 76.363558];
+const ThaparUniversity = [31.223253663058028, 121.46065891524344];
 
 const defaultPropsMaps = {
-  center: [30.352904, 76.363558],
+  center: [31.223253663058028, 121.46065891524344],
   zoom: 15,
   greatPlaceCoords: { lat: 59.724465, lng: 30.080121 }
 };
@@ -332,8 +332,7 @@ const Home = props => {
                 width: "40%"
               }}
             />
-            <h4 style={{ display: "inline-block" }}>Developer Student Clubs</h4>
-            {/* <ToggleButton /> */}
+            <h4 style={{ display: "inline-block" }}>基于生成式大语言模型的中文长文本法律一站式网站</h4>
             <h6 style={{ display: "inline-block" }}>
               Thapar Institute of Engineering and Technology
             </h6>
@@ -403,20 +402,9 @@ const Home = props => {
 
               <br />
               <br />
-              {/* <Button variant="contained" color="primary">
-                {" "}
-                Sign up
-              </Button> */}
+            
               <br />
               <br />
-              <h6
-                style={{ color: "#0066FF", cursor: "pointer" }}
-                onClick={() => {
-                  window.open("https://developers.google.com/community/dsc");
-                }}
-              >
-                Learn more about the program
-              </h6>
             </Grid>
             <Grid item xs={12} lg={6} xl={6} className={classes.gridImg}>
               <img src={Team} alt="img" className={classes.TeamImg} />
@@ -456,9 +444,7 @@ const Home = props => {
                   cursor: "pointer"
                 }}
                 className={styles.link}
-                onClick={() => {
-                  window.open("https://www.facebook.com/dscthapar/");
-                }}
+  
               >
                 <i
                   className="fab fa-facebook-f fa-lg"
@@ -479,9 +465,6 @@ const Home = props => {
                   cursor: "pointer"
                 }}
                 className={styles.link}
-                onClick={() => {
-                  window.open("https://www.instagram.com/dsc.tiet/");
-                }}
               >
                 <i
                   className="fab fa-instagram fa-lg"
@@ -502,9 +485,7 @@ const Home = props => {
                   cursor: "pointer"
                 }}
                 className={styles.link}
-                onClick={() => {
-                  window.open("https://twitter.com/dsctiet?s=09");
-                }}
+
               >
                 <i
                   className="fab fa-twitter fa-lg"
@@ -525,11 +506,6 @@ const Home = props => {
                   cursor: "pointer"
                 }}
                 className={styles.link}
-                onClick={() => {
-                  window.open(
-                    "https://www.youtube.com/channel/UCl235NVnbWqqCT7NQAIUzVQ"
-                  );
-                }}
               >
                 <i
                   className="fab fa-youtube fa-lg"
@@ -551,9 +527,6 @@ const Home = props => {
                 }}
                 className={styles.link}
                 onClick={() => {
-                  window.open(
-                    "https://medium.com/developer-student-clubs-tiet"
-                  );
                 }}
               >
                 <i
@@ -575,11 +548,6 @@ const Home = props => {
                   cursor: "pointer"
                 }}
                 className={styles.link}
-                onClick={() => {
-                  window.open(
-                    "https://www.linkedin.com/company/developer-student-club-thapar/?viewAsMember=true"
-                  );
-                }}
               >
                 <i
                   className="fab fa-linkedin-in fa-lg"
@@ -772,15 +740,6 @@ const Home = props => {
                 </Styledh6>
 
                 <br />
-
-                <h6
-                  style={{ color: "#0066FF", cursor: "pointer" }}
-                  onClick={() => {
-                    // props.history.push("/team");
-                  }}
-                >
-                  Meet the Team
-                </h6>
               </Grid>
             </Grid>
           </Grid>
@@ -790,14 +749,8 @@ const Home = props => {
               <StyledCard
                 className={classes.root}
                 style={{ margin: "auto" }}
-                onClick={() => {
-                //   props.history.push("/events");
-                }}
               >
                 <CardActionArea
-                  onClick={() => {
-                    // props.history.push("/events");
-                  }}
                   className={
                     classes.cardAction
                   }
@@ -819,9 +772,7 @@ const Home = props => {
                   </CardContent>
                 </CardActionArea>
                 <CardActions>
-                  <Button variant="outlined" color="primary">
-                    Learn More
-                  </Button>
+
                 </CardActions>
               </StyledCard>
             </Grid>
@@ -850,11 +801,6 @@ const Home = props => {
                   </CardContent>
                 </CardActionArea>
                 <CardActions>
-                  <a href="mailto:dsc.tiet@gmail.com">
-                    <Button variant="outlined" color="primary">
-                      Send Proposal
-                    </Button>
-                  </a>
                 </CardActions>
               </StyledCard>
             </Grid>
@@ -862,14 +808,9 @@ const Home = props => {
               <StyledCard
                 className={classes.root}
                 style={{ margin: "auto" }}
-                onClick={() => {
-                //   props.history.push("/projects");
-                }}
               >
                 <CardActionArea
-                  onClick={() => {
-                    // props.history.push("/projects");
-                  }}
+
                   className={
                     classes.cardAction
                   }
@@ -890,9 +831,7 @@ const Home = props => {
                   </CardContent>
                 </CardActionArea>
                 <CardActions>
-                  <Button variant="outlined" color="primary">
-                    Learn More
-                  </Button>
+                 
                 </CardActions>
               </StyledCard>
             </Grid>
@@ -917,15 +856,6 @@ const Home = props => {
               </Styledh6>
 
               <br />
-              <Button
-                variant="contained"
-                style={{ backgroundColor: "#2C2F23", color: "white" }}
-                onClick={() => {
-                  window.open("https://discord.gg/TAywK8bAxA");
-                }}
-              >
-                Join us on <img src={Discord} height="30px" alt="discord" />
-              </Button>
             </Grid>
           </Grid>
           <br />
@@ -956,14 +886,7 @@ const Home = props => {
               </Styledh6>
 
               <br />
-              <h6
-                style={{ color: "#0066FF", cursor: "pointer" }}
-                onClick={() => {
-                  window.open("http://www.thapar.edu/");
-                }}
-              >
-                Learn More
-              </h6>
+           
             </Grid>
           </Grid>
           <br />
@@ -981,9 +904,6 @@ const Home = props => {
           <GoogleMapReact
             center={defaultPropsMaps.center}
             zoom={defaultPropsMaps.zoom}
-            // options={{
-            //   styles: props.theme.mode === "dark" && mapStyle
-            // }}
             bootstrapURLKeys={{
               key: "AIzaSyB3JAqF0AMxgbfnGtt0R5Yk0MaBe9p1P5s"
             }}
@@ -991,18 +911,10 @@ const Home = props => {
             <AnyReactComponent
               lat={ThaparUniversity[0]}
               lng={ThaparUniversity[1]}
-              text="Thapar University"
+              text="Shanghai"
             />
           </GoogleMapReact>
-          {/* <iframe
-            width="100%"
-            height="400"
-            frameBorder="0"
-            style={{ border: "0" }}
-            src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJxbWHSlMvEDkRs4LjN9M-Hdo&key=AIzaSyB3JAqF0AMxgbfnGtt0R5Yk0MaBe9p1P5s"
-            allowFullScreen
-            title="Map"
-          ></iframe> */}
+        
         </Grid>
       </Grid>
       {/* <Footer /> */}

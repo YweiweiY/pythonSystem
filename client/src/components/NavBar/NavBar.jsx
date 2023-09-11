@@ -28,6 +28,9 @@ const NavBar = () => {
                 <Link className="navbar-brand" to="/case">
                     案例
                 </Link>
+                <Link className="navbar-brand" to="/lawyer">
+                    律师
+                </Link>
                 <ul className="navbar-nav mr-auto">
                     {
                         profile !== null ? (
